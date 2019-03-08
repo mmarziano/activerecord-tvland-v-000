@@ -4,9 +4,7 @@ class Show < ActiveRecord::Base
   belongs_to :network
 
   def build_network(network)
-   binding.pry
-   new = Network.new(network)
-   self.network = new
+    Network.new(network)
   end 
 
 end
