@@ -2,9 +2,9 @@ class Show < ActiveRecord::Base
   has_many :characters
   has_many :actors, through: :characters
 
-  def build_network(t)
+  def build_network(network)
     binding.pry
-    Network.new(self.network.call_letters)
+    Network.new(network)
   end 
 
 end
