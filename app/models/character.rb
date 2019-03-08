@@ -8,5 +8,5 @@ class Character < ActiveRecord::Base
   
   def build_show
     Show.new(name: self.name)
-  
+  end
 end
