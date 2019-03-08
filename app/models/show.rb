@@ -3,7 +3,7 @@ class Show < ActiveRecord::Base
   has_many :actors, through: :characters
 
   def build_show  
-    self.cla
+    Show.new()
   end 
 
 end
