@@ -3,7 +3,7 @@ class Show < ActiveRecord::Base
   has_many :actors, through: :characters
 
   def build_network(network)
-  
+   binding.pry
    self.network = Network.new(network)
   end 
 
